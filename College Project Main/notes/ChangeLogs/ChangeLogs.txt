@@ -1,0 +1,93 @@
+//Primary Changes:
+
+1.02 (Dale)
++	Added Mouse Click Left on the Menus to "Enter"
+
+1.03 (Jack)
++	Added Title to Main Menu & Fixed some spacing
++	Added a debugger press F1 to open in-game or "Start" on Controller
++	Started Work on Level Select Screen
++	Added Fade In/Out for Menu Transition to Game
++	Added Controller Support for the Player
++	Added Jump Animation / Jump Particles
+
+1.04 (Dale)
++	Added Background Sprite for Level 1
++   Replaced the testTiles for full finished layout of Level 1
++   Added the ability to pick up Coins
++   Added GUI for a Coin Counter
++   Added a Win Sate - Player can now progress to level 2
++	Redesigned the higher platform on Level 1 due to known bug
+-   Deleted the Lava testTile Layer
+
+1.05 (Jack)
++	Added locked display to levels that aren't yet unlocked.
++	Added clouds that wrap around the level. They re-create once off the side
++	Progress on level select info
++	Added Animated Grass
++	Added New Coin Sprite
+
+1.06 (Dale)
++	Added Music to the Main Menu and Level 1
++	Added Sample Sound Effects for the Menu to the sound folder ready for sampling.
+
+1.07 (Jack)
++	Added Scroll sound to Keyboard/Gamepad
++	Made & Added new lava sprite
++	Added walking sound 
++	Added Teleporter with animation effect use "F"
++	Started work on introduction with crow as story/tutorial leader
++	Added new Tileset + Teleporter sprite
++	Compressed music files into OGG format taking file size from 29MB -> 4MB 
++	Added Parallax effect
++	Added Screen Shake Script
++	Added Melee Attack + Combo
++	Working on first Enemy
+
+1.08 (Dale)
++	Changed position of the teleporters on rm_1
++	Added Sound for when you press Enter on play game or the level select
+Fixes:
+
+1.03 (Jack)
++	Reworked mouse click left on the menus so it only works when you are hovering over the menu element.
+	Before you could do it anywhere on the screen and it would transition.
++	Fixed where the player would sometimes get stuck in the wall due to the changing hitboxes of the sprites. Made them similar to fix 
+
+1.04 (Dale)
++	Re-fixed the player getting stuck in walls at corners (can still get stuck when jumping and colliding from underneath)
+
+1.05 (Jack)
++	Fixed being able to see out the top of the map.
+
+1.07 (Jack)
++	Fixed weird main menu selected bug changing randomly
+
+1.08 (Dale)
++   Removed the pitch in the scroll sound (I think it sounds more consistent)
++	Made the Menu music carry over to the levels (i think we should have steady rise on the music, nice and calm for the first few levels, getting more intense as the game gets harder)
++	Fixed a bug where you could fly after jumping then punching
+
+
+Known Bugs:
+1.04 (Dale)
++	Player can still get stuck when jumping and colliding from underneath.
+
+
+//Secondary Ideas/Todo List
+
+Ideas:
++	Room with no oxygen with a time limit to complete
++	Room with toxic corrosion parts that you need to uncorrode (some kind of Purify element) - a door you need to pass through which is covered in flames, you need to uncorrode the pipe, and then turn on the valve to allow water to flow and put out the fire
++	Rooms with blockades to destroy to pass (some sort of explosion/fire element)
+
+ToDo:
++	Final design changes
++	Chop off the "Ending" to the "Menu Music" so it repeats more smoothly.
++	Add Crow as a guide to the teleporter on rm_1
+
+Done:
++	Animate clouds
++	Animate lava in background sprite for level 1
++	Make Coin Counter more noticable on level 1
++	Added sound effects to main menu#

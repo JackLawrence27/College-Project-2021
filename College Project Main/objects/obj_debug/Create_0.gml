@@ -1,0 +1,2 @@
+//Debug Inital
+showDebug = false;

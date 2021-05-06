@@ -1,0 +1,1 @@
+global.canTeleport = true;
