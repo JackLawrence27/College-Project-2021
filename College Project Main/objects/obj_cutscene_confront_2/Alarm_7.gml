@@ -1,0 +1,1 @@
+obj_player_cutscene.alarm[2] = 50;

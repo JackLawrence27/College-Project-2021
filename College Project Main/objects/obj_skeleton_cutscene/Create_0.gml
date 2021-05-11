@@ -8,3 +8,5 @@ if(room = rm_cutscene_intro){
 if(room = rm_cutscene_confront){
 	sprite_index = spr_skeleton_idle;
 }
+
+runAway = false;

@@ -16,4 +16,3 @@ col4 = make_colour_rgb(40,40,46)
 lightcolourintensity = 0.2;
 image_blend = choose(col1,col2,col3,col4)
 lightcolour = make_colour_rgb(255,255,0);
-

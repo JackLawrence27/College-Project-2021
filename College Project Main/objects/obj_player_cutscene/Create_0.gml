@@ -7,5 +7,5 @@ if(room = rm_cutscene_intro){
 }
 
 if(room = rm_cutscene_confront){
-	sprite_index = spr_player_sword_idle;
+	sprite_index = spr_player_sword_idle_sheathed;
 }
