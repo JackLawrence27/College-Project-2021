@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemys",
-    "path": "folders/Sprites/Enemys.yy",
+    "name": "SkeletonBasic-T1",
+    "path": "folders/Sprites/Enemys/SkeletonBasic-T1.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_skeleton_hurt",

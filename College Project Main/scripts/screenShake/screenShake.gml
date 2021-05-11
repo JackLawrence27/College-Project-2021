@@ -10,3 +10,14 @@ with(obj_camera){
 	}
 }
 }
+
+function screenShakeCut(){
+with(obj_camera_cutscene){
+	if(argument0 > shakeRemain){
+		shakeMagnitude = argument0;
+		shakeRemain = argument0;
+		shakeLength = argument1;
+	}
+}
+
+}

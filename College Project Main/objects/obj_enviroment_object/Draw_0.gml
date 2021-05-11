@@ -1,0 +1,1 @@
+draw_sprite(drawEnviro,0,x,y);

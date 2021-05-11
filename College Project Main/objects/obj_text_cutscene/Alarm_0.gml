@@ -1,0 +1,1 @@
+canPlaySound = true;
