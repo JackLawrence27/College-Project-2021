@@ -11,7 +11,7 @@ if(letters < string_length(text))
 text_current = string_copy(text,1,floor(letters));
 
 draw_set_font(f_main);
-if (h == 0) h = string_height(text);
+if (h == 0) h = string_height(text)+2;
 w = string_width(text_current);
 
 if(canPlaySound){

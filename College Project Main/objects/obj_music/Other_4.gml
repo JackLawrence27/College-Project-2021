@@ -18,3 +18,9 @@ if room = rm_cutscene_confront
 	audio_play_sound(s_confront_cutscene,1000,false);
 }
 
+if room = rm_cutscene_tutorial
+{
+	audio_stop_all();
+	audio_play_sound(s_music_menu, 1000, true)
+}
+

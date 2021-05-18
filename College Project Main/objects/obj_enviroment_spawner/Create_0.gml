@@ -16,4 +16,9 @@ if(room = rm_cutscene_confront){
 enviromentCount = 50;
 foliageCount = 32;
 }
+
+if(room = rm_cutscene_tutorial){
+enviromentCount = 50;
+foliageCount = 32;
+}
 randomize();

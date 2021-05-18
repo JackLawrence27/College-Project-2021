@@ -25,6 +25,15 @@ if(room = rm_cutscene_confront){
 		}
 }
 
+if(room = rm_cutscene_tutorial){
+
+	if(sprite_index = spr_player_get_up){
+		if(image_index >= 6){
+			sprite_index = spr_player_idle;
+			obj_cutscene_tutorial.alarm[6] = 60;
+		}
+}
+}
 //if(counterFootsteps==0){
 //	p=random_range(.9,1.1);
 //	audio_sound_pitch(s_walk, p);

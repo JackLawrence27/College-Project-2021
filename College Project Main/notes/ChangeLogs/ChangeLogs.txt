@@ -47,6 +47,17 @@
 1.08 (Dale)
 +	Changed position of the teleporters on rm_1
 +	Added Sound for when you press Enter on play game or the level select
+
+1.09 (Jack & Dale)
++	New Enemies Including Final Boss
++	Implemented Chase Cutscene
++	Implemented Confront Cutscene
++	Implemented Tutorial Cutscene
++	Implemented Insignia Controller
++	Added Procedural Enviroment generator for cutscene rooms
++	Started work on insignia selection menu (What elements you use)
++	Added music from Dale
+	
 Fixes:
 
 1.03 (Jack)
