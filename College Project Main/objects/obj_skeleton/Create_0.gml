@@ -7,6 +7,7 @@ movespeed = 0.75;
 grounded = false; //Whether or not we're on the ground
 slope_height = 13; //How steep slopes can be that we're able to climb
 walking = false; //If walking or not
+attackCreated = false;
 
 //State Handler
 enum skeletonState

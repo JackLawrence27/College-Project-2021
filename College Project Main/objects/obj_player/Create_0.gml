@@ -14,7 +14,10 @@ created = false; //Jump dust
 
 controller = 0; //Checking if Controller input is being used
 
+attackCount = 0;
+
 invincible = false;
+dead = false;
 global.playerLocked = false;
 image_speed = 0.20;
 
@@ -35,12 +38,7 @@ hitbox[0] = obj_player_hitbox_1;
 hitbox[1] = obj_player_hitbox_2;
 hitbox[2] = obj_player_hitbox_3;
 
-//Elements
-elementFire = true;
-
 //Damage
 global.punchDamage1 = 1;
 global.punchDamage2 = 1;
 global.punchDamage3 = 1;
-
-global.elementFireDamage = 1;

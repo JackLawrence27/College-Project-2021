@@ -6,6 +6,14 @@ if room = rm_menu
 	audio_play_sound(s_music_menu, 1000, true)
 }
 
+if room = rm_menu_new
+{
+	audio_stop_sound(s_music_menu)
+	audio_stop_sound(s_music_level_one)
+	audio_stop_sound(s_music_boss_battle)
+	audio_play_sound(s_music_menu, 1000, true)
+}
+
 if room = rm_cutscene_intro
 {
 	audio_stop_all();
@@ -24,3 +32,7 @@ if room = rm_cutscene_tutorial
 	audio_play_sound(s_music_menu, 1000, true)
 }
 
+if(room = rm_one){
+	audio_stop_all();
+	audio_play_sound(s_music_menu, 1000, true)
+}

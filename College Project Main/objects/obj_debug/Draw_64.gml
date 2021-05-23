@@ -17,6 +17,9 @@ draw_text(5,40,"INST: " + string(instance_count))
 draw_set_color(c_white)
 if(instance_exists(obj_player)){
 draw_text(5,47,"CONTROLLER: " + string(obj_player.controller))
+draw_text(5,54,"SAVEX: " + string(global.playerXSave))
+draw_text(5,61,"SAVEY: " + string(global.playerYSave))
+draw_text(5,68,"SAVEROOM: " + string(global.playerRoom))
 }
 
 } else {
@@ -24,3 +27,4 @@ draw_text(5,47,"CONTROLLER: " + string(obj_player.controller))
 	
 }
 draw_set_color(c_white) 
+

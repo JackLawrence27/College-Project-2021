@@ -1,0 +1,1 @@
+attackCount = 0;

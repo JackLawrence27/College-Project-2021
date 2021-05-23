@@ -1,10 +1,13 @@
 instance_destroy(obj_text_cutscene_auto);
+
 instance_create_layer(x,y,"Music",obj_text_cutscene_auto);
 
 with(obj_text_cutscene_auto){
-	avatar = spr_player_avatar;
-	text = "I'm sorry impending doom???\nWho are you why are you lecturing me.";
-	pitch = 1;
+	avatar = spr_crow_avatar;
+	text = "Your health also appears to be a bit low\nTry using that campfire";
+	pitch = 1.2;
 }
 
-alarm[11] = 340;
+instance_create_layer(x,y,"Music",obj_hud);
+
+alarm[11] = 420;

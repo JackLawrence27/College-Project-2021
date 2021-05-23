@@ -14,8 +14,17 @@ draw_text_color(70,137,"BEAR",brown,brown,brown,brown,0.75);
 draw_text_color(70,145,"ELEMENT: EARTH",c_white,c_white,c_white,c_white,1);
 draw_text_color(70,145,"ELEMENT: EARTH",brown,brown,brown,brown,0.75);
 
-draw_text_color(70,153,"+ BONUS MAXIMUM HEALTH",c_white,c_white,c_white,c_white,1);
-draw_text_color(70,153,"+ BONUS MAXIMUM HEALTH",brown,brown,brown,brown,0.75);
+if(obj_player.controller = 0){
+draw_text_color(70,153,"> ENTER <",c_white,c_white,c_white,c_white,1);
+draw_text_color(70,153,"> ENTER <",brown,brown,brown,brown,0.75);
+}
+
+if(obj_player.controller = 1){
+draw_text_color(70,153,"> A/X <",c_white,c_white,c_white,c_white,1);
+draw_text_color(70,153,"> A/X <",brown,brown,brown,brown,0.75);
+}
+
+
 
 draw_set_font(f_main);
 draw_set_halign(fa_left);
@@ -41,8 +50,15 @@ draw_text_color(160,137,"WOLF",orange,orange,orange,orange,0.75);
 draw_text_color(160,145,"ELEMENT: FIRE",c_white,c_white,c_white,c_white,1);
 draw_text_color(160,145,"ELEMENT: FIRE",orange,orange,orange,orange,0.75);
 
-draw_text_color(160,153,"+ BONUS BASE DAMAGE",c_white,c_white,c_white,c_white,1);
-draw_text_color(160,153,"+ BONUS BASE DAMAGE",orange,orange,orange,orange,0.75);
+if(obj_player.controller = 0){
+draw_text_color(160,153,"> ENTER <",c_white,c_white,c_white,c_white,1);
+draw_text_color(160,153,"> ENTER <",orange,orange,orange,orange,0.75);
+}
+
+if(obj_player.controller = 1){
+draw_text_color(160,153,"> A/X <",c_white,c_white,c_white,c_white,1);
+draw_text_color(160,153,"> A/X <",orange,orange,orange,orange,0.75);
+}
 
 draw_set_font(f_main);
 draw_set_halign(fa_left);
@@ -68,8 +84,15 @@ draw_text_color(250,137,"OWL",green,green,green,green,0.75);
 draw_text_color(250,145,"ELEMENT: WIND",c_white,c_white,c_white,c_white,1);
 draw_text_color(250,145,"ELEMENT: WIND",green,green,green,green,0.75);
 
-draw_text_color(250,153,"+ BONUS MOVE SPEED",c_white,c_white,c_white,c_white,1);
-draw_text_color(250,153,"+ BONUS MOVE SPEED",green,green,green,green,0.75);
+if(obj_player.controller = 0){
+draw_text_color(250,153,"> ENTER <",c_white,c_white,c_white,c_white,1);
+draw_text_color(250,153,"> ENTER <",green,green,green,green,0.75);
+}
+
+if(obj_player.controller = 1){
+draw_text_color(250,153,"> A/X <",c_white,c_white,c_white,c_white,1);
+draw_text_color(250,153,"> A/X <",green,green,green,green,0.75);
+}
 
 draw_set_font(f_main);
 draw_set_halign(fa_left);

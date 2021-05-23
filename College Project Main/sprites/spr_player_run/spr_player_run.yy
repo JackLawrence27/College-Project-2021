@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "Fists",
+    "path": "folders/Sprites/Player/Fists.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_run",

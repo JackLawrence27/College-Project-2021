@@ -1,0 +1,1 @@
+global.insigniaSelected = 2;
