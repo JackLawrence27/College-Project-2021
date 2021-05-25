@@ -23,3 +23,5 @@ instance_create_layer(x,y,"Music",obj_fire_popup);
 global.playerXSave = x;
 global.playerYSave = y-28;
 global.playerRoom = room;
+
+instance_destroy(obj_particle_player_controller);

@@ -15,6 +15,7 @@ created = false; //Jump dust
 controller = 0; //Checking if Controller input is being used
 
 attackCount = 0;
+canJump = 0;
 
 invincible = false;
 dead = false;

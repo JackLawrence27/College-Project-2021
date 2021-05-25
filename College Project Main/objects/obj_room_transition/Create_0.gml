@@ -1,0 +1,2 @@
+transition = false;
+roomTransition = "";

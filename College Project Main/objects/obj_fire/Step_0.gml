@@ -7,6 +7,7 @@ var playerDis = distance_to_object( obj_player );
 textAlpha = ( fadeThresh + fadeRange - playerDis ) / fadeRange;
 
 if(keyInteract) && (place_meeting(x,y,obj_player)) && (global.playerLocked = false) && (room != rm_cutscene_tutorial) && (resting != true) {
+	instance_create_layer(obj_player.x,obj_player.y,"Music",obj_particle_player_controller)
 	resting = true;
 	with(obj_player){
 		attacking = true;
@@ -19,6 +20,7 @@ if(keyInteract) && (place_meeting(x,y,obj_player)) && (global.playerLocked = fal
 }
 
 if(keyInteract) && (room = rm_cutscene_tutorial) && (global.playerLocked = false) && (resting != true) && (!instance_exists(obj_cutscene_tutorial_3)){
+	instance_create_layer(obj_player.x,obj_player.y,"Music",obj_particle_player_controller)
 	resting = true;
 	with(obj_player){
 		attacking = true;

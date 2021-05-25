@@ -64,17 +64,22 @@
 1.11 (Jack)
 +	Fixed all skeletons taking damage and dying at the same time
 +	Fixed all damage indicators being drawn on all skeletons instead of just the one being attacked
-+	Removed fire tick damage as no longer necessary
-+	Added in Insignia hud
-+	Added in Health hud
 +	Fixed being able to get stuck into walls when jump
 +	Added enemy hitboxes for attacking player
 +	Fixed last frame repeating of attack animation. Now perfectly synced
-+	Added Wolf Cast Ability
-+	Added Owl Cast Ability
+
++	Added in insignia hud
++	Added in health hud
++	Added in wolf cast ability
++	Added in owl cast ability
++	Added in coyote Time
++	Added in saveable point with heals
++	Added in pause menu
++	Added in room transitions
+
 +	Started New Menu (More Manageable)
-+	Added Saveable point with heals
 +	Finished Tutorial Cutscene
++	Removed fire tick damage as no longer necessary
 
 Fixes:
 

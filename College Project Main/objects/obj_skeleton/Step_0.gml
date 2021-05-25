@@ -1,6 +1,8 @@
+if(global.skeletonLocked = true) exit;
 //Health Manager
 if(skeletonHealth <= 0){
 state = skeletonState.DEAD
+
 }
 
 //State Machine

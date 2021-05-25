@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Fire",
-    "path": "folders/Objects/Items/Fire.yy",
+    "name": "Player Fire Particle",
+    "path": "folders/Objects/Items/Fire/Player Fire Particle.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_particle_fire",

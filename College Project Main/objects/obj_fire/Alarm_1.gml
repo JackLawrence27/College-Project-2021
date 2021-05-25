@@ -27,3 +27,5 @@ global.playerRoom = room;
 instance_create_layer(x,y,"Music",obj_cutscene_tutorial_3);
 
 global.playerLocked = false;
+
+instance_destroy(obj_particle_player_controller);

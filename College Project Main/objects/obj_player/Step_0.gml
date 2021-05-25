@@ -60,8 +60,10 @@ if(grounded) && (move != 0) && (!attacking){
 
 
 //Jump
-if (keyUp) and (grounded) //If we're on the ground and the jump key was pressed
+canJump -= 1;
+if (keyUp) and (canJump > 0) //If we're on the ground and the jump key was pressed
 {
+	canJump = 0;
 	walking = false;
 	created = false;
     vsp -= jumpspeed; //Move us up by our jumpspeed
@@ -75,6 +77,7 @@ if(!place_meeting(x,y+1,obj_wall)){
 	if(image_index >= 3){ image_index = 3; }
 	if(sign(vsp) < 0) sprite_index = spr_player_jump;
 } else {
+	canJump = 10;
 	if(sprite_index == spr_player_run) && (created = false) or (sprite_index == spr_player_idle) && (created = false)
 	{
 	repeat(5){

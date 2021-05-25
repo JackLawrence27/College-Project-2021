@@ -1,3 +1,4 @@
+global.skeletonLocked = false;
 //Skeleton Variables
 image_speed = 0.15;
 hsp = 0; //Horizontal Speed
