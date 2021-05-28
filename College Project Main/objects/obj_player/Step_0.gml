@@ -162,7 +162,12 @@ if(keyCast) && (canAttack) && (global.playerInsigniaCharge = 1) && (!keyboard_ch
 	canAttack = false;
 	global.playerInsigniaCharge = 0;
 	if(global.insigniaSelected = 1){ //Bear
-	
+		instance_create_layer(x,y,"Music",obj_player_hitbox_bear_cast);
+		state_set_sprite(spr_player_bear_cast,0.2,0)
+		alarm[2] = 60;
+		obj_hud_insignia_controller.cooldown = true;
+		global.playerInsigniaCharge = 0;
+		obj_hud_insignia_controller.alarm[1] = 60;
 }
 	if(global.insigniaSelected = 2){ //Wolf
 		instance_create_layer(x,y,"Music",obj_player_hitbox_wolf_cast);

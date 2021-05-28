@@ -1,9 +1,12 @@
 //Menu Control Inputs
-keyLeft = keyboard_check(vk_down) || keyboard_check(vk_left) || gamepad_button_check(0,gp_shoulderl) || gamepad_button_check(0,gp_padl) || abs(max(gamepad_axis_value(0,gp_axislh),0));
-keyRight = keyboard_check(vk_up) || keyboard_check(vk_right) || gamepad_button_check(0,gp_shoulderr) || gamepad_button_check(0,gp_padr) || abs(min(gamepad_axis_value(0,gp_axislh),0));
+keyLeft = keyboard_check(vk_down) || keyboard_check(vk_left) || gamepad_button_check(0,gp_shoulderl) || gamepad_button_check(0,gp_padl) || abs(max(gamepad_axis_value(0,gp_axislh),0)) || mouse_wheel_down()
+keyRight = keyboard_check(vk_up) || keyboard_check(vk_right) || gamepad_button_check(0,gp_shoulderr) || gamepad_button_check(0,gp_padr) || abs(min(gamepad_axis_value(0,gp_axislh),0)) || mouse_wheel_up();
 keyEnter = keyboard_check(vk_enter) || gamepad_button_check(0,gp_face1) || gamepad_button_check(0,gp_face3)
-keyEnterReleased = keyboard_check_released(vk_enter) || gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(0,gp_face3)
-keyMouseLeft = mouse_check_button_pressed(mb_left)
+keyEnterReleased = keyboard_check_released(vk_enter) || gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(0,gp_face3) || mouse_check_button_pressed(mb_left)
+
+if(gamepad_button_check_released(0,gp_face1)) or gamepad_button_check_released(0,gp_face3) or gamepad_button_check(0,gp_shoulderl) or gamepad_button_check(0,gp_shoulderr) or gamepad_button_check(0,gp_padl) or gamepad_button_check(0,gp_padr){
+obj_player.controller = 1
+}
 
 if(insigniaSelected != 0){
 //Scrolling Selector
@@ -106,6 +109,7 @@ if(backDimFade = false){
 if(insigniaAlpha <= 0){
 	insigniaAlpha = 0
 	instance_destroy();
+	global.playerLocked = false;
 }	
 }
 

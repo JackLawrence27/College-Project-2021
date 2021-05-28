@@ -19,7 +19,7 @@ if(keyInteract) && (place_meeting(x,y,obj_player)) && (global.playerLocked = fal
 	alarm[0] = 120;
 }
 
-if(keyInteract) && (room = rm_cutscene_tutorial) && (global.playerLocked = false) && (resting != true) && (!instance_exists(obj_cutscene_tutorial_3)){
+if(keyInteract) && (room = rm_cutscene_tutorial) && (global.playerLocked = false) && (resting != true) && (!instance_exists(obj_cutscene_tutorial_3))  && (place_meeting(x,y,obj_player)) && (instance_exists(obj_wall_cutscene)){
 	instance_create_layer(obj_player.x,obj_player.y,"Music",obj_particle_player_controller)
 	resting = true;
 	with(obj_player){

@@ -10,7 +10,7 @@ if(global.playerInsigniaCharge = 1) && (pulse = true){
 }		
 
 if(global.playerInsigniaCharge < 100) && (cooldown = false){
-	global.playerInsigniaCharge += 0.005;
+	global.playerInsigniaCharge += 0.004;
 
 }
 

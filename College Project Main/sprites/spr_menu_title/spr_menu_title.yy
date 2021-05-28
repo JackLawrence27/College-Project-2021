@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
-    "path": "folders/Sprites/NewMainMenu/Sprites.yy",
+    "path": "folders/Objects/NewMainMenu/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_menu_title",

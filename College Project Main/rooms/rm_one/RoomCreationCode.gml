@@ -23,3 +23,7 @@ if(global.playerRoom = rm_one) && (global.playerXSave != 0) && (global.playerYSa
 	instance_create_layer(39,273,"Player",obj_camera);
 	}
 }
+
+if(global.insigniaSelected = 0){
+	instance_create_layer(x,y,"Music",obj_insignia_controller_rechoose);
+}

@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
-    "path": "folders/Sprites/NewMainMenu/Objects.yy",
+    "path": "folders/Objects/NewMainMenu/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_menu_play",

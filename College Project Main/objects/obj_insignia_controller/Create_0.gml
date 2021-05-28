@@ -27,3 +27,5 @@ backDimAlpha = 0;
 insigniaAlpha = 0.6;
 
 spriteFrame = 0;
+
+global.playerLocked = true;

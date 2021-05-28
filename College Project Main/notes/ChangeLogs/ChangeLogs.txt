@@ -81,6 +81,14 @@
 +	Finished Tutorial Cutscene
 +	Removed fire tick damage as no longer necessary
 
+1.13 (Jack)
++	Finished tutorial
++	Added in controls to be viewed
++	Added bear attack
++	Hooked up room transitions for new levels
++	Changed menu to white and moved it about
++	LOADS of bug fixes
+
 Fixes:
 
 1.03 (Jack)

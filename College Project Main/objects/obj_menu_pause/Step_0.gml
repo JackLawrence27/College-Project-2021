@@ -2,12 +2,12 @@
 //Menu Control Inputs
 keyUp = keyboard_check(vk_down) || gamepad_button_check(0,gp_shoulderrb) || gamepad_button_check(0,gp_padd) || abs(max(gamepad_axis_value(0,gp_axislv),0)) || mouse_wheel_down();
 keyDown = keyboard_check(vk_up) || gamepad_button_check(0,gp_shoulderlb) || gamepad_button_check(0,gp_padu) || abs(min(gamepad_axis_value(0,gp_axislv),0)) || mouse_wheel_up();
-keyEnter = keyboard_check(vk_enter) || gamepad_button_check(0,gp_face1) || gamepad_button_check(0,gp_face3)
-keyEnterReleased = keyboard_check_released(vk_enter) || gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(0,gp_face3)
-keyMouseLeft = mouse_check_button_pressed(mb_left)
-keyPause = keyboard_check_pressed(vk_escape);
+keyEnter = keyboard_check(vk_enter) || gamepad_button_check(0,gp_face1) || gamepad_button_check(0,gp_face3);
+keyEnterReleased = keyboard_check_released(vk_enter) || gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(0,gp_face3);
+keyMouseLeft = mouse_check_button_pressed(mb_left);
+keyPause = keyboard_check_pressed(vk_escape) || gamepad_button_check_released(0,gp_start);
 
-if(keyPause){
+if(keyPause) && (!instance_exists(obj_insignia_controller)) && (!instance_exists(obj_insignia_controller_rechoose)) && (!instance_exists(obj_menu_pause_controls)){
 	if(!global.pause){
 		global.pause = true;
 		global.skeletonLocked = true;
@@ -27,7 +27,7 @@ if(keyPause){
 	}
 }
 
-
+if(global.pause){
 //Scrolling Selector
 var dir = 0;
 if(keyDown) { dir -= 1; }
@@ -92,6 +92,7 @@ if(selected >= 3){
 
 if(selected <= -1){
 	selected = 2
+}
 }
 }
 #endregion

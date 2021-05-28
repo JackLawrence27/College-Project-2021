@@ -1,0 +1,1 @@
+creditsScroll = 0;

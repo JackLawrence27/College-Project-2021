@@ -11,7 +11,6 @@ if(global.playerRoom = rm_three) && (global.playerXSave != 0) && (global.playerY
 	global.playerXSave = 0;
 	global.playerYSave = 0;
 	global.playerRoom = room;
-	instance_create_layer(67,296,"Player",obj_player);
-	instance_create_layer(67,296,"Player",obj_camera);
+	instance_create_layer(40,429,"Player",obj_player);
+	instance_create_layer(40,429,"Player",obj_camera);
 }
-

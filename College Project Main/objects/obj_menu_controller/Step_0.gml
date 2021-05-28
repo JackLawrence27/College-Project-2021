@@ -3,7 +3,7 @@
 keyUp = keyboard_check(vk_down) || gamepad_button_check(0,gp_shoulderrb) || gamepad_button_check(0,gp_padd) || abs(max(gamepad_axis_value(0,gp_axislv),0)) || mouse_wheel_down();
 keyDown = keyboard_check(vk_up) || gamepad_button_check(0,gp_shoulderlb) || gamepad_button_check(0,gp_padu) || abs(min(gamepad_axis_value(0,gp_axislv),0)) || mouse_wheel_up();
 keyEnter = keyboard_check(vk_enter) || gamepad_button_check(0,gp_face1) || gamepad_button_check(0,gp_face3)
-keyEnterReleased = keyboard_check_released(vk_enter) || gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(0,gp_face3)
+keyEnterReleased = keyboard_check_released(vk_enter) || gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(0,gp_face3) || mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space)
 keyMouseLeft = mouse_check_button_pressed(mb_left)
 //Scrolling Selector
 var dir = 0;
@@ -50,17 +50,35 @@ if(selected = 0){
 }
 
 if(selected = 1){
-	with(obj_menu_options){
+	if(keyEnterReleased)
+	{ 
+		alarm[3] = 10;
+		audio_play_sound(AdvanceSound, 2, false);
+	}
+	if(keyMouseLeft) && (obj_menu_start_without.canLeftClick = true) 
+	{
+		alarm[3] = 10;
+		audio_play_sound(AdvanceSound, 2, false);
+	}
+	with(obj_menu_start_without){
+		sprite_index = spr_menu_start_without;
 		drawXscale = 1.2;
 		drawYscale = 1.2;
-	}
+		
+	}		
+} else {
+	with(obj_menu_start_without){
+		sprite_index = spr_menu_start_without;
+	}	
 }
 
 if(selected = 2){
+	if(keyEnterReleased){ alarm[5] = 10; }
+	if(keyMouseLeft) && (obj_menu_credits.canLeftClick = true) { alarm[5] = 10; }
 	with(obj_menu_credits){
 		drawXscale = 1.2;
 		drawYscale = 1.2;
-	}
+	}	
 }
 
 if(selected = 3){
